@@ -1,0 +1,1 @@
+Demonstrates that using Lombok's @SuperBuilder annotation prevents MapStruct from calling the @AfterMapping method.
