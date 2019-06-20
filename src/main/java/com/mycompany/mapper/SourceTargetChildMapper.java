@@ -35,8 +35,8 @@ public abstract class SourceTargetChildMapper {
     public abstract TargetChild toTarget(Source s);
 
     @AfterMapping
-    public TargetChild afterMapping(Source s, @MappingTarget TargetChild.TargetChildBuilder target) {
+    public void afterMapping(Source s, @MappingTarget TargetChild.TargetChildBuilder target) {
         target.afterMappingField(AFTER_MAPPING_FIELD_VAL);
-        return target.build();
+        target.build();
     }
 }
